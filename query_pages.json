@@ -1,0 +1,123 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "df81bc12-c596-4dee-8c55-11ac18f30e41",
+            "created_time": "2021-07-22T15:14:00.000Z",
+            "last_edited_time": "2021-07-23T11:53:00.000Z",
+            "parent": {
+                "type": "database_id",
+                "database_id": "e27dbee3-0ee1-4145-9758-34f380ab32db"
+            },
+            "archived": false,
+            "properties": {
+                "Task": {
+                    "id": "PTEY",
+                    "type": "relation",
+                    "relation": []
+                },
+                "Goal": {
+                    "id": "RaEB",
+                    "type": "relation",
+                    "relation": []
+                },
+                "Short Description": {
+                    "id": "WhQX",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "goal, long term goals",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "goal, long term goals",
+                            "href": null
+                        }
+                    ]
+                },
+                "Category": {
+                    "id": "]MhT",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Target": {
+                    "id": "a=Z;",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "56e4e7d7-cc6a-41bf-a4a4-c9c009ee6e01"
+                        },
+                        {
+                            "id": "ebefa14c-0a83-4b71-a020-0590e5218181"
+                        }
+                    ]
+                },
+                "Target Indicator": {
+                    "id": "bWqQ",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Deadline": {
+                    "id": "co:?",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔥 154 days"
+                    }
+                },
+                "Date": {
+                    "id": "siNm",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-07-23",
+                        "end": "2021-12-24"
+                    }
+                },
+                "Done": {
+                    "id": "y_ru",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Make 10mil a month from tattooing",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Make 10mil a month from tattooing",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Make-10mil-a-month-from-tattooing-df81bc12c5964dee8c5511ac18f30e41"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false
+}
