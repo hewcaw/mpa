@@ -1,4 +1,8 @@
 # Miscellaneous
+*.env
+/.bak/**
+/packages/**
+
 *.class
 *.log
 *.pyc

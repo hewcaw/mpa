@@ -30,6 +30,11 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  # notion_api: ^1.1.0
+  notion_api:
+    path: ./packages/notion_api/
+  flutter_dotenv: ^5.0.0
+
   flutter_test:
     sdk: flutter
 
@@ -45,7 +50,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - .env
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

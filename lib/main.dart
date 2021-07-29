@@ -1,11 +1,31 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:notion_api/notion.dart';
+import 'package:notion_api/responses/notion_response.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+import './service.dart' show NotionService;
+
+void main() async {
+  await dotenv.load(fileName: ".env");
+  NotionClient notion = NotionClient(token: dotenv.env['TOKEN']!);
+
+  //NotionResponse notionRes =
+  await notion.databases.fetch(dotenv.env['GOAL_DB']!);
+  // print(notionRes);
+  // Future<NotionResponse> res = NotionService.fetchGoalDatabase();
+  // NotionResponse data = await res;
+  // print(data);
+  // print(res.then((value) => print(value)));
+  // print(res);
+  runApp(MyApp(token: notion.databases.token));
 }
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  final String token;
+
+  const MyApp({Key? key, required this.token}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,9 +40,12 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
+        backgroundColor: Colors.black45,
+        scaffoldBackgroundColor: Colors.black45,
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Token - $token'),
     );
   }
 }
